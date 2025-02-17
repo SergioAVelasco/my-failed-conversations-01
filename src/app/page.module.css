@@ -1,6 +1,29 @@
 .container {
-  background-color: salmon;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
   .column {
-    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    .item {
+      height: 10px;
+      width: 10px;
+      margin: 1px;
+      background-color: black;
+
+      &.l1 {
+        background-color: #0e4429;
+      }
+      &.l2 {
+        background-color: #006d32;
+      }
+      &.l3 {
+        background-color: #26a641;
+      }
+      &.l4 {
+        background-color: #39d353;
+      }
+    }
   }
 }
